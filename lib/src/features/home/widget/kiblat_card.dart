@@ -24,62 +24,11 @@ class KiblatCard extends StatelessWidget {
         child: Container(
           padding: kCardPadding,
           decoration: BoxDecoration(
-            color: Theme.of(context).colorScheme.background.withOpacity(0.85),
+            color: const Color(0xFFF5AC1C),  // Set the background color to #F5AC1C
             borderRadius: kCardBorderRadius,
           ),
           child: Column(
             children: [
-              Row(
-                children: [
-                  ClipRRect(
-                    borderRadius: kAppIconBorderRadius,
-                    child: SvgPicture.asset(
-                      'assets/images/core/svg/app_logo.svg',
-                      width: 32.w,
-                    ),
-                  ),
-                  SizedBox(
-                    width: 8.w,
-                  ),
-                  Expanded(
-                    child: Text(
-                      'Sirate Mustaqeem',
-                      style: Theme.of(context).textTheme.headlineSmall,
-                    ),
-                  ),
-                  GestureDetector(
-                    onTap: () {},
-                    child: SvgPicture.asset(
-                      'assets/images/home_icon/svg/noti.svg',
-                      width: 24.w,
-                      color: Theme.of(context).textTheme.bodyMedium!.color,
-                    ),
-                  )
-                ],
-              ),
-              Divider(),
-              GestureDetector(
-                onTap: () {},
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      'Current Location',
-                    ),
-                    TextButton(
-                      onPressed: () {
-                        showDialog(
-                            context: context,
-                            builder: (context) => ComingSoonDialog());
-                      },
-                      child: Text(
-                        'Change Location',
-                      ),
-                    )
-                  ],
-                ),
-              ),
-              Divider(),
               Row(
                 children: [
                   Expanded(

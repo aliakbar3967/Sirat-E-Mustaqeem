@@ -51,7 +51,7 @@ class SplashScaffold extends StatelessWidget {
                 height: 16.h,
               ),
               Text(
-                'Brought to you by Dev Technologies',
+                'Beyond the mosque, within your soul.',
                 style: GoogleFonts.kaushanScript(
                   fontSize: 16.sp,
                 ),

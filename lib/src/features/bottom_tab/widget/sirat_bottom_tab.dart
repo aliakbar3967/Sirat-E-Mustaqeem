@@ -48,7 +48,7 @@ class SiratNavigationBar extends StatelessWidget {
                     .unselectedItemColor,
                 width: 24.sp,
               ),
-              label: 'Search',
+              label: 'Silent Mode',
               activeIcon: SvgPicture.asset(
                 'assets/images/navigation_icon/svg/search.svg',
                 color: Theme.of(context)

@@ -16,7 +16,7 @@ List<Collection> collections = [
   ),
   Collection(
     'assets/images/collection_icon/svg/hadees.svg',
-    'Hadees',
+    'Mosque Finder',
     'Coming Soon',
   ),
   Collection(
@@ -46,7 +46,7 @@ List<Collection> collections = [
   ),
   Collection(
     'assets/images/collection_icon/svg/other.svg',
-    'Others',
+    'Halal Places',
     'Coming Soon',
   ),
 ];

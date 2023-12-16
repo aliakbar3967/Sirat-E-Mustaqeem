@@ -33,6 +33,7 @@ dependencies:
   shared_preferences: ^2.0.6
   sqflite: ^2.0.0+3
   url_launcher: ^6.0.9
+  rename: ^3.0.1
 
 dev_dependencies:
   flutter_test:

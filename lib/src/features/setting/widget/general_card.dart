@@ -24,31 +24,18 @@ class GeneralCard extends StatelessWidget {
             ),
           ),
           Text(
-            'Sirate Mustaqeem',
+            'Masjid Mode',
             style: Theme.of(context).textTheme.headlineSmall,
           ),
           SizedBox(
             height: 8.h,
           ),
-          Text(
-            'an app by',
-            style: Theme.of(context).textTheme.bodyLarge,
-          ),
+        
           SizedBox(
             height: 8.h,
           ),
           Text(
-            'Dev Technologies',
-            style: Theme.of(context).textTheme.titleLarge!.copyWith(
-                  fontWeight: FontWeight.bold,
-                  color: Theme.of(context).primaryColor,
-                ),
-          ),
-          SizedBox(
-            height: 8.h,
-          ),
-          Text(
-            'The \'Sirate Mustaqeem\' app is a prodictivity app '
+            'The \'Masjid Mode\' app is a prodictivity app '
             'to help Muslims creating better habits '
             'and increasing their \'iman\' (faith) '
             ' and \'ibadah\' (acts of worship).',

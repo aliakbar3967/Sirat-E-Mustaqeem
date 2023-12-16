@@ -18,15 +18,15 @@ class HomeSliverList extends StatelessWidget {
           SizedBox(
             height: 16.h,
           ),
-          AyatCard(),
+          // AyatCard(),
           SizedBox(
             height: 16.h,
           ),
-          HadessCard(),
+          // HadessCard(),
           SizedBox(
             height: 16.h,
           ),
-          RandomImageCard(),
+          // RandomImageCard(),
           SizedBox(
             height: 112.h,
           ),

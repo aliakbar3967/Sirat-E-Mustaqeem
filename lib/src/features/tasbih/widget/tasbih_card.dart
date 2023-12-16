@@ -72,7 +72,7 @@ class _TasbihCardState extends State<TasbihCard> {
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 border: Border.all(
-                  color: Theme.of(context).primaryColor,
+                  color:  Colors.amberAccent,
                   width: 2.sp,
                 ),
               ),
@@ -80,7 +80,7 @@ class _TasbihCardState extends State<TasbihCard> {
                 child: Text(
                   widget.index.toString(),
                   style: TextStyle(
-                    color: Theme.of(context).primaryColor,
+                    color:  Colors.amberAccent,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -108,7 +108,7 @@ class _TasbihCardState extends State<TasbihCard> {
                   widget.tasbih.counter.toString(),
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
-                    color: Theme.of(context).primaryColor,
+                    color:  Colors.amberAccent,
                   ),
                 ),
                 Text(
@@ -141,7 +141,7 @@ class _TasbihCardState extends State<TasbihCard> {
                 widget.tasbih.favorite == 0
                     ? 'assets/images/tasbih_icon/svg/favorite.svg'
                     : 'assets/images/tasbih_icon/svg/favorite_filled.svg',
-                color: Theme.of(context).primaryColor,
+                color:  Colors.amberAccent,
                 width: 20.w,
               ),
             ),
@@ -162,7 +162,7 @@ class _TasbihCardState extends State<TasbihCard> {
               },
               child: SvgPicture.asset(
                 'assets/images/tasbih_icon/svg/more.svg',
-                color: Theme.of(context).primaryColor,
+                color: Colors.amberAccent,
                 width: 20.w,
               ),
             )

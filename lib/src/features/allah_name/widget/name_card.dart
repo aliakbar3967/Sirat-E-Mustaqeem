@@ -41,7 +41,7 @@ class NameCard extends StatelessWidget {
                           name.english,
                           style:
                               Theme.of(context).textTheme.titleLarge!.copyWith(
-                                    color: Theme.of(context).primaryColor,
+                                    color:  Colors.amberAccent,
                                     fontWeight: FontWeight.bold,
                                   ),
                         ),
@@ -58,7 +58,7 @@ class NameCard extends StatelessWidget {
                   Text(
                     name.arabic,
                     style: Theme.of(context).textTheme.titleLarge!.copyWith(
-                          color: Theme.of(context).primaryColor,
+                          color:  Colors.amberAccent,
                           fontWeight: FontWeight.bold,
                           fontFamily: 'Uthman',
                         ),

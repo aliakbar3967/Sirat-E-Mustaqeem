@@ -43,7 +43,7 @@ class SurahCard extends StatelessWidget {
                 shape: RoundedRectangleBorder(
                   borderRadius: kCardBorderRadius,
                 ),
-                color: Theme.of(context).primaryColor.withOpacity(
+                color: Colors.black.withOpacity(
                       0.2,
                     ),
               ),

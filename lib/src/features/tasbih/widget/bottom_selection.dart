@@ -53,7 +53,7 @@ class _BottomSelectionState extends State<BottomSelection> {
             'Actions:',
             textAlign: TextAlign.center,
             style: Theme.of(context).textTheme.titleLarge!.copyWith(
-                  color: Theme.of(context).primaryColor,
+                  color:  Colors.amberAccent,
                   fontWeight: FontWeight.bold,
                 ),
           ),

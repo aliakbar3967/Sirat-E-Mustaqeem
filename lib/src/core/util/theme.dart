@@ -10,6 +10,7 @@ enum AppTheme { Dark, Light }
 final Map<AppTheme, ThemeData> kAppThemeData = {
   AppTheme.Dark: ThemeData.dark().copyWith(
     primaryColor: kDarkPrimary,
+    primaryColorQ: kDarkPrimaryQ,
     scaffoldBackgroundColor: kDarkBg,
     textTheme: GoogleFonts.openSansTextTheme(
       TextTheme().copyWith(
@@ -117,6 +118,7 @@ final Map<AppTheme, ThemeData> kAppThemeData = {
   ),
   AppTheme.Light: ThemeData.light().copyWith(
     primaryColor: kLightPrimary,
+    primaryColorQ: kLightPrimaryQ,
     scaffoldBackgroundColor: kLightBg,
     textTheme: GoogleFonts.openSansTextTheme(
       TextTheme().copyWith(

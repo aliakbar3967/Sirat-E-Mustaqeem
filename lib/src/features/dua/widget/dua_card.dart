@@ -22,7 +22,7 @@ class DuaCard extends StatelessWidget {
         children: [
           SvgPicture.asset(
             'assets/images/dua_icon/svg/bismillah.svg',
-            color: Theme.of(context).primaryColor,
+            color: Colors.amber,
             width: 0.4.sw,
           ),
           SizedBox(
@@ -74,7 +74,7 @@ class DuaCard extends StatelessWidget {
                   dua.favorite == 0
                       ? 'assets/images/tasbih_icon/svg/favorite.svg'
                       : 'assets/images/tasbih_icon/svg/favorite_filled.svg',
-                  color: Theme.of(context).primaryColor,
+                  color: Colors.amber,
                   width: 20.w,
                 ),
               ),

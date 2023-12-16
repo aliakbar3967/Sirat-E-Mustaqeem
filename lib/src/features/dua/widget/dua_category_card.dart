@@ -30,7 +30,7 @@ class DuaCategoryCard extends StatelessWidget {
             padding: kCardPadding,
             decoration: BoxDecoration(
               borderRadius: kCardBorderRadius,
-              color: Theme.of(context).primaryColor.withOpacity(0.2),
+              color:Colors.amber.withOpacity(0.2),
             ),
             child: Row(
               children: [
@@ -44,7 +44,7 @@ class DuaCategoryCard extends StatelessWidget {
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     border: Border.all(
-                      color: Theme.of(context).primaryColor,
+                      color:Colors.amber,
                       width: 2.sp,
                     ),
                   ),
@@ -52,7 +52,7 @@ class DuaCategoryCard extends StatelessWidget {
                     child: Text(
                       index.toString(),
                       style: TextStyle(
-                        color: Theme.of(context).primaryColor,
+                        color: Colors.amber,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -74,7 +74,7 @@ class DuaCategoryCard extends StatelessWidget {
                       state.expanded
                           ? 'assets/images/dua_icon/svg/riseup.svg'
                           : 'assets/images/dua_icon/svg/dropdown.svg',
-                      color: Theme.of(context).primaryColor,
+                      color: Colors.amberAccent,
                       width: 24.w,
                     );
                   },

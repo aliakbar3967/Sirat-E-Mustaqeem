@@ -28,7 +28,7 @@ class SettingScreen extends StatelessWidget {
               SizedBox(
                 height: 16.h,
               ),
-              SocialMediaCard(),
+              // SocialMediaCard(),
             ],
           ),
         ),

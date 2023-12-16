@@ -56,7 +56,7 @@ class SelectedTasbihScreen extends StatelessWidget {
                                   currentProgress:
                                       state.count / state.tasbih.counter * 100,
                                   foregroundColor:
-                                      Theme.of(context).primaryColor,
+                                       Colors.amberAccent,
                                   backgroundColor:
                                       Theme.of(context).colorScheme.background,
                                   strokeWidth: 8.sp),
@@ -74,13 +74,13 @@ class SelectedTasbihScreen extends StatelessWidget {
                                       .textTheme
                                       .displayLarge!
                                       .copyWith(
-                                        color: Theme.of(context).primaryColor,
+                                        color:  Colors.amberAccent,
                                       ),
                                 ),
                                 Text(
                                   '/ ${state.tasbih.counter}',
                                   style: TextStyle(
-                                    color: Theme.of(context).primaryColor,
+                                    color: Colors.amberAccent,
                                   ),
                                 )
                               ],

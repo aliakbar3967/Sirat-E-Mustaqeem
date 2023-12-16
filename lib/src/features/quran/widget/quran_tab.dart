@@ -49,7 +49,7 @@ class QuranTab extends StatelessWidget {
                         ? Border(
                             bottom: BorderSide(
                               color: Theme.of(context).primaryColor,
-                              width: 2.sp,
+                              // width: 2.sp,
                             ),
                           )
                         : Border(
@@ -93,7 +93,7 @@ class QuranTab extends StatelessWidget {
                         ? Border(
                             bottom: BorderSide(
                               color: Theme.of(context).primaryColor,
-                              width: 2.sp,
+                              // width: 2.sp,
                             ),
                           )
                         : Border(

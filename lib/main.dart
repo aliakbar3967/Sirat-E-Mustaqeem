@@ -9,7 +9,7 @@ import 'routes/routes.dart';
 import 'src/core/notification/notification_service.dart';
 import 'src/core/util/bloc/allah_names/allah_name_bloc.dart';
 import 'src/core/util/bloc/database/database_bloc.dart';
-import 'src/core/util/bloc/dua/dua_bloc.dart';
+import 'src/core/util/bloc/dua/dua_bloc.dart'; 
 import 'src/core/util/bloc/juz/juz_bloc.dart';
 import 'src/core/util/bloc/location/location_bloc.dart';
 import 'src/core/util/bloc/notification/notification_bloc.dart';
@@ -93,7 +93,7 @@ class MyApp extends StatelessWidget {
                   return BlocBuilder<ThemeBloc, ThemeState>(
                     builder: (context, state) {
                       return MaterialApp(
-                        title: 'Sirate Mustaqeem',
+                        title: 'Masjid Mode',
                         debugShowCheckedModeBanner: false,
                         color: Colors.white,
                         theme: state.currentTheme,
@@ -105,7 +105,7 @@ class MyApp extends StatelessWidget {
                 },
               );
             return MaterialApp(
-              title: 'Sirate Mustaqeem',
+              title: 'Masjid Mode',
               debugShowCheckedModeBanner: false,
               color: Colors.white,
               home: Container(),
@@ -114,3 +114,4 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+ 

@@ -43,7 +43,7 @@ class QuranCard extends StatelessWidget {
                   quran.favorite == 0
                       ? 'assets/images/navigation_icon/svg/bookmark_nfill.svg'
                       : 'assets/images/navigation_icon/svg/bookmark_fill.svg',
-                  color: Theme.of(context).primaryColor,
+                  color: Colors.black,
                   width: 24.w,
                 ),
               ),

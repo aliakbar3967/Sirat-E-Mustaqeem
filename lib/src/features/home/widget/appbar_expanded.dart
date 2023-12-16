@@ -18,19 +18,12 @@ class AppBarExpanded extends StatelessWidget {
         children: [
           BlocBuilder<ThemeBloc, ThemeState>(
             builder: (context, state) {
-              return SizedBox(
-                width: 1.sw,
-                height: 0.3.sh,
-                child: state.currentTheme.brightness == Brightness.dark
-                    ? SvgPicture.asset(
-                        'assets/images/home_icon/svg/night_mode.svg',
-                        fit: BoxFit.cover,
-                      )
-                    : SvgPicture.asset(
-                        'assets/images/home_icon/svg/day_mode.svg',
-                        fit: BoxFit.cover,
-                      ),
-              );
+             return Container(
+  width: 1.sw,
+  height: 0.3.sh,
+  color: Colors.white,  // Set the background color to #FFFFFF  
+);
+
             },
           ),
           Container(
@@ -39,8 +32,10 @@ class AppBarExpanded extends StatelessWidget {
             decoration: BoxDecoration(
               gradient: LinearGradient(
                 colors: [
-                  Theme.of(context).primaryColor.withOpacity(0.5),
-                  Colors.transparent,
+                  Colors.amber,
+                  Colors.white,
+                  // Theme.of(context).primaryColor.withOpacity(0.5),
+                  
                 ],
                 stops: [0.2, 1],
                 begin: Alignment.topCenter,
@@ -53,9 +48,10 @@ class AppBarExpanded extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Text(
-                  'Assalamu alaikum',
+                  'Masjid Mode',
+                  
                   style: Theme.of(context).textTheme.titleLarge!.copyWith(
-                        fontWeight: FontWeight.bold,
+                        fontWeight: FontWeight.bold,fontSize: 24.0,
                       ),
                 ),
                 Padding(

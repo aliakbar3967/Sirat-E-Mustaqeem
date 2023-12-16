@@ -23,73 +23,31 @@ class CollectionCard extends StatelessWidget {
           SizedBox(
             height: 16.h,
           ),
-          Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: collections.length >= 4
-                  ? List.generate(
-                      4,
-                      (index) {
-                        return CollectionButton(
-                          collections[index],
-                        );
-                      },
-                    )
-                  : [
-                      ...List.generate(
-                        collections.length,
-                        (index) {
-                          return CollectionButton(
-                            collections[index],
-                          );
-                        },
-                      ),
-                      ...List.generate(
-                        4 - collections.length,
-                        (index) {
-                          return SizedBox(
-                            width: 64.w,
-                          );
-                        },
-                      ),
-                    ]),
-          if (collections.length > 4)
-            SizedBox(
-              height: 16.h,
-            ),
-          if (collections.length > 4)
+          // Display collections in rows of 3
+          for (int i = 0; i < collections.length; i += 3)
             Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: collections.length >= 8
-                    ? List.generate(
-                        4,
-                        (index) {
-                          return CollectionButton(
-                            collections[index + 4],
-                          );
-                        },
-                      )
-                    : [
-                        ...List.generate(
-                          collections.length - 4,
-                          (index) {
-                            return CollectionButton(
-                              collections[index + 4],
-                            );
-                          },
-                        ),
-                        ...List.generate(
-                          8 - collections.length,
-                          (index) {
-                            return SizedBox(
-                              width: 64.w,
-                            );
-                          },
-                        ),
-                      ])
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: List.generate(
+                // Display up to 3 collections in a row
+                (i + 3 > collections.length) ? collections.length - i : 3,
+                (index) {
+                  return Expanded(
+                    child: Card(
+                      color: Colors.amberAccent,
+                      elevation: 4.0,
+                      shadowColor: Colors.black,
+                      child: CollectionButton(
+                        
+                        collections[i + index],
+                      ),
+                    ),
+                  );
+                },
+              ),
+            ),
         ],
       ),
     );
   }
 }
+

@@ -1,4 +1,4 @@
-package com.devtechnologies.siratemustaqeem
+package com.qubilix.masjidmodeapp
 
 import io.flutter.embedding.android.FlutterActivity
 

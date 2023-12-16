@@ -25,7 +25,7 @@ class HomeSliverAppbar extends StatelessWidget {
             reverseDuration: Duration.zero,
             child: state.displayAppbar
                 ? Text(
-                    'Sirate Mustaqeem',
+                    'Masjid Mode',
                     style: Theme.of(context).textTheme.headlineSmall,
                   )
                 : Text(''),

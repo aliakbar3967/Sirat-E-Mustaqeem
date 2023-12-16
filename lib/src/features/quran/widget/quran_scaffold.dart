@@ -19,7 +19,7 @@ class QuranScaffold extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+        backgroundColor: Colors.transparent, // Make the app bar transparent
         elevation: 0,
         iconTheme: IconThemeData(
           color: Theme.of(context).textTheme.bodyMedium!.color,
@@ -74,6 +74,7 @@ class QuranScaffold extends StatelessWidget {
                 'Al-Qur\'an',
                 style: Theme.of(context).textTheme.displayMedium!.copyWith(
                       fontWeight: FontWeight.bold,
+                      fontSize: 24.sp, // Increase font size
                     ),
               ),
             ),

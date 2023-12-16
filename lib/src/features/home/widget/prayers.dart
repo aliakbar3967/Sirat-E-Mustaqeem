@@ -31,7 +31,7 @@ class Prayers extends StatelessWidget {
                       controller!.prayer,
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
-                        color: Theme.of(context).primaryColor,
+                        color: Colors.white,
                       ),
                     ),
                     SizedBox(
@@ -44,7 +44,8 @@ class Prayers extends StatelessWidget {
                               ? controller!.time
                               : convertTimeTo12HourFormat(controller!.time),
                           style: TextStyle(
-                            color: Theme.of(context).primaryColor,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
                           ),
                         );
                       },
